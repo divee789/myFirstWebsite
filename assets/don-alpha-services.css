@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Acme|Cinzel|Kanit|Permanent+Marker|Signika');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    z-index: 9;
+    margin-bottom: 3rem;
+}
+
+.logo{
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+}
+
+#logo-image{
+    width: 100%;
+}
+
+
+nav{
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+nav ul{
+    margin: 0;
+    margin-right: 2rem;
+    padding: 0;
+    display: flex;
+} 
+nav ul li{
+    list-style: none;
+    margin-left: 1px;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: #262626;
+}
+
+nav ul li a.active,ul li a:hover{
+    background: #1DD13B;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+  
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    font-weight: normal;
+    font-weight: 100;
+    font-size:16px;
+    
+}
+li .dropdown {
+    position: relative;
+    display:inline-block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#1DD13B;
+color: #fff;}
+
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+
+
+@media screen and (max-width:950px){
+
+    header{
+        position: relative;
+    }
+    
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        margin-right: 20px;
+        background:#fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color:  #1DD13B;
+    }
+    .menu-toggle:before{
+        content:'\f0c9';
+        line-height: 40px;
+        font-family: fontAwesome;
+    }
+
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+    .nav{
+        display: none;
+    }
+
+    nav.active{
+        display: block;
+        width:100%;
+    }
+
+    nav.active ul{
+        display: block;
+    }
+
+    nav.active ul li a{
+        margin: 0;
+    }
+    
+}
+
+
+.indicator{
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 1.3s;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    width: 100%;
+    background: #1DD13B;
+}
+
+.ind-item{
+    width: 33%;
+}
+
+.ind-btn{
+    display: flex;
+    width: 100%;
+    background-color: #1DD13B;
+}
+
+.indicator:hover{
+    background: #1DD13B;
+    color: #fff;
+    opacity: 1;
+
+}
+.ind-active{
+    background: #1DD13B;
+    color: #fff;
+    opacity: 1;
+}
+
+section{
+    text-align: center;
+    background-image: url("../assets/images/tab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    padding-top: 4rem;
+}
+
+
+
+.d1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#span{
+    font-size: 2rem;
+    color: #262626;
+}
+
+.flight-form{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form2{
+    margin-left: 3rem;
+}
+input{
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    outline: none;
+}
+.check{
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0.8;
+    font-weight: 700;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#odd{
+    margin-top: 2rem;
+}
+
+.submit{
+    margin-top: 2rem;
+    margin-left: 120%;
+    width:40%;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #1DD13B;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: 0.6s;
+}
+
+.submit:hover{
+    background: rgba(69, 182, 87, 0.7);
+    font-size: 1.5rem;
+}
+
+
+.flight-deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #262626;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.image-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1%;
+}
+
+.container{
+    width: 40%;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+}
+.flight-images{
+   height: 15rem;
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+.desc{
+    position: absolute;
+    bottom: 3rem;
+    right: 0.9rem;
+    font-size:1.5rem;
+    color: #fff;
+    opacity: 1;
+}
+
+h5{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.c-box{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+.c{
+    margin-left: 3.5rem;
+}
+.h4{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.booking{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 10%;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #1DD13B;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: 1s;
+}
+
+.booking:hover{
+    background: rgba(69, 182, 87, 0.473);
+    font-size: 1.5rem;
+}
+
+.d2,.d3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+
+.form-co{
+    margin-top:2.5rem;
+}
+
+#f2,#f3{
+    display: none;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    background: #fff;
+    text-align: start;
+  
+}
+.footer-logo{
+    margin-left: 3rem;
+}
+
+.logo2{
+    width: 70%;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 8rem;
+}
+
+
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+
+.footer-content{
+    margin-bottom:1rem;
+    font-size: 0.9rem;
+}
+
+
+@media screen and (max-width:900px){
+    input{
+        size: 20%;
+    }
+
+    .flight-form,.image-gallery{
+        flex-direction: column;
+
+    }
+    
+
+    .form2{
+        margin-left: 0;
+    }
+
+    .indicator{
+        font-size: 0.7rem;
+    }
+
+    .submit{
+        margin-top: 2rem;
+        margin-left: 0;
+        width:35%;
+        padding: 0.7rem 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #1DD13B;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .container{
+        width: 90%;
+    }
+
+    .footer-flex{
+        margin-right: 2rem;
+    }
+
+    .booking{
+        width: 30%;
+    }
+
+    #out{
+        display: block;
+    }
+
+    #logo-image{
+        width: 100%;
+    }
+
+    .logo{
+        width: 50%;
+    }
+}
